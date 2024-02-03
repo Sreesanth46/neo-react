@@ -1,10 +1,10 @@
-interface TColumn {
+export interface TColumn {
   key: string;
   header: string;
   format?: (cell: unknown) => string;
 }
 
-interface IDataGrid {
+export interface IDataGrid {
   rows: object[];
   columns?: TColumn[];
   loading?: boolean;
