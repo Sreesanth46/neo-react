@@ -1,4 +1,5 @@
 import { DataGrid } from '../lib/main';
+import { Show } from '../lib/main';
 
 const people = [
   {
@@ -48,6 +49,10 @@ const people = [
 function App() {
   return (
     <div className="p-6">
+      <Show>
+        <Show.When isTrue={false}>Hello it is true</Show.When>
+        <Show.Else>Not true</Show.Else>
+      </Show>
       <DataGrid rows={people} />
     </div>
   );
