@@ -1,3 +1,4 @@
+import { Dropdown } from '../lib/components/DropDown';
 import { DataGrid } from '../lib/main';
 import { Show } from '../lib/main';
 
@@ -54,6 +55,15 @@ function App() {
         <Show.Else>Not true</Show.Else>
       </Show>
       <DataGrid rows={people} />
+
+      <Dropdown>
+        <Dropdown.Button>Solution</Dropdown.Button>
+        <Dropdown.List>
+          <Dropdown.Item>Item 1</Dropdown.Item>
+          <Dropdown.Item>Item 2</Dropdown.Item>
+        </Dropdown.List>
+        <Dropdown.Footer>Simple footer</Dropdown.Footer>
+      </Dropdown>
     </div>
   );
 }
