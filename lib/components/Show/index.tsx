@@ -1,4 +1,5 @@
-import React, { Children, ReactElement } from 'react';
+import type React from 'react';
+import { Children, type ReactElement } from 'react';
 
 interface WhenProps {
   isTrue: boolean;
